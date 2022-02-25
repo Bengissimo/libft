@@ -6,7 +6,7 @@
 #    By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/06 12:44:18 by bkandemi          #+#    #+#              #
-#    Updated: 2022/02/21 11:23:40 by bkandemi         ###   ########.fr        #
+#    Updated: 2022/02/25 15:00:53 by bkandemi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,6 +72,7 @@ C_FILES =	ft_atoi.c\
 		ft_toupper.c\
 		ft_itoa_base.c\
 		ft_free_array.c\
+		ft_abs.c
 	
 
 O_FILES = $(C_FILES:.c=.o)

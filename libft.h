@@ -6,7 +6,7 @@
 /*   By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 11:59:40 by bkandemi          #+#    #+#             */
-/*   Updated: 2022/02/21 14:09:36 by bkandemi         ###   ########.fr       */
+/*   Updated: 2022/02/25 15:00:39 by bkandemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,5 +84,7 @@ void	ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void	ft_free_array(char **array, unsigned int index);
 char	*ft_itoa_base(long nb, int base);
+int		ft_abs(int nb);
+
 
 #endif
