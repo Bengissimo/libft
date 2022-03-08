@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   ft_itoa_base_upper.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/10 11:25:37 by bkandemi          #+#    #+#             */
-/*   Updated: 2022/03/01 13:21:13 by bkandemi         ###   ########.fr       */
+/*   Created: 2022/03/08 15:41:45 by bkandemi          #+#    #+#             */
+/*   Updated: 2022/03/08 15:42:32 by bkandemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memalloc(size_t size)
+char	*ft_itoa_base_upper(uintmax_t nb, int base)
 {
-	void	*ptr;
-
-	ptr = (void *)malloc(sizeof(void) * size);
-	if (!ptr)
-		return (NULL);
-	ft_bzero(ptr, size);
-	return (ptr);
+	return (ft_itoa_base_case(nb, base, "0123456789ABCDEF"));
 }

@@ -6,7 +6,7 @@
 /*   By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 11:59:40 by bkandemi          #+#    #+#             */
-/*   Updated: 2022/02/28 10:46:14 by bkandemi         ###   ########.fr       */
+/*   Updated: 2022/03/08 15:45:47 by bkandemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 # include <unistd.h>
 # include <string.h>
 # include <stdlib.h>
+
+# define TRUE 1
+# define FALSE 0
 
 typedef struct s_list
 {
@@ -83,6 +86,8 @@ void	ft_lstadd(t_list **alst, t_list *new);
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void	ft_free_array(char **array, unsigned int index);
-char	*ft_itoa_base(long nb, int base);
+char	*ft_itoa_base_case(uintmax_t nb, int base, char *base_ref);
+char	*ft_itoa_base(uintmax_t nb, int base);
+char	*ft_itoa_base_upper(uintmax_t nb, int base);
 
 #endif
