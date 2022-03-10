@@ -6,7 +6,7 @@
 #    By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/06 12:44:18 by bkandemi          #+#    #+#              #
-#    Updated: 2022/03/08 15:44:34 by bkandemi         ###   ########.fr        #
+#    Updated: 2022/03/10 11:08:32 by bkandemi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,7 +72,6 @@ C_FILES =	ft_atoi.c\
 		ft_toupper.c\
 		ft_itoa_base.c\
 		ft_itoa_base_upper.c\
-		ft_itoa_base_case.c\
 		ft_free_array.c\
 	
 
