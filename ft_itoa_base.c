@@ -6,13 +6,11 @@
 /*   By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 14:42:38 by bkandemi          #+#    #+#             */
-/*   Updated: 2022/03/10 11:00:23 by bkandemi         ###   ########.fr       */
+/*   Updated: 2022/03/10 11:47:47 by bkandemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-#define BASE_REF = "0123456789abcdef";
 
 static unsigned int	count_digits(uintmax_t nb, int base)
 {
@@ -36,7 +34,9 @@ char	*ft_itoa_base(uintmax_t nb, int base)
 {
 	char			*str;
 	unsigned int	size;
+	const char *base_ref;
 
+	base_ref = "0123456789abcdef";
 	if (base < 2 || base > 16)
 		return (NULL);
 	size = count_digits(nb, base);
@@ -48,7 +48,7 @@ char	*ft_itoa_base(uintmax_t nb, int base)
 	str[size] = '\0';
 	while (nb > 0)
 	{
-		str[size - 1] = BASE_REF[nb % base];
+		str[size - 1] = base_ref[nb % base];
 		nb = nb / base;
 		size--;
 	}
