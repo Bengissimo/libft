@@ -6,7 +6,7 @@
 /*   By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/11 09:21:17 by bkandemi          #+#    #+#             */
-/*   Updated: 2022/03/16 10:56:12 by bkandemi         ###   ########.fr       */
+/*   Updated: 2022/03/28 10:10:20 by bkandemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 double	ft_power(double nb, int power)
 {
 	double	result;
-	
+
 	result = 1.0;
 	if (power == 0)
 		return (1.0);

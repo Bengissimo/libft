@@ -6,7 +6,7 @@
 /*   By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 11:59:40 by bkandemi          #+#    #+#             */
-/*   Updated: 2022/03/24 10:50:17 by bkandemi         ###   ########.fr       */
+/*   Updated: 2022/03/28 10:09:25 by bkandemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,5 @@ char		*ft_itoa_base(uintmax_t nb, int base);
 char		*ft_itoa_base_upper(uintmax_t nb, int base);
 double		ft_power(double nb, int power);
 long double	abs_value(long double nb_dbl, int *negative);
-
 
 #endif

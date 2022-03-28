@@ -6,7 +6,7 @@
 /*   By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/08 14:42:38 by bkandemi          #+#    #+#             */
-/*   Updated: 2022/03/10 11:47:47 by bkandemi         ###   ########.fr       */
+/*   Updated: 2022/03/28 10:08:49 by bkandemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_itoa_base(uintmax_t nb, int base)
 {
 	char			*str;
 	unsigned int	size;
-	const char *base_ref;
+	const char		*base_ref;
 
 	base_ref = "0123456789abcdef";
 	if (base < 2 || base > 16)
