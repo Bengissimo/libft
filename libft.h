@@ -6,7 +6,7 @@
 /*   By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 11:59:40 by bkandemi          #+#    #+#             */
-/*   Updated: 2022/03/11 11:43:40 by bkandemi         ###   ########.fr       */
+/*   Updated: 2022/03/24 10:50:17 by bkandemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <unistd.h>
 # include <string.h>
 # include <stdlib.h>
-#include <stdint.h>
+# include <stdint.h>
 
 # define TRUE 1
 # define FALSE 0
@@ -89,6 +89,8 @@ t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void		ft_free_array(char **array, unsigned int index);
 char		*ft_itoa_base(uintmax_t nb, int base);
 char		*ft_itoa_base_upper(uintmax_t nb, int base);
-double		ft_power(int nb, int power);
+double		ft_power(double nb, int power);
+long double	abs_value(long double nb_dbl, int *negative);
+
 
 #endif

@@ -1,37 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_power.c                                         :+:      :+:    :+:   */
+/*   ft_abs_value.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/11 09:21:17 by bkandemi          #+#    #+#             */
-/*   Updated: 2022/03/16 10:56:12 by bkandemi         ###   ########.fr       */
+/*   Created: 2022/03/18 13:37:03 by bkandemi          #+#    #+#             */
+/*   Updated: 2022/03/24 13:45:58 by bkandemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-double	ft_power(double nb, int power)
+long double	abs_value(long double nb_dbl, int *negative)
 {
-	double	result;
-	
-	result = 1.0;
-	if (power == 0)
-		return (1.0);
-	if (power < 0)
+	*negative = 0;
+
+	if (nb_dbl < 0.0)
 	{
-		while (power < 0)
-		{
-			result = result / nb;
-			power++;
-		}
-		return (result);
+		nb_dbl = -nb_dbl;
+		*negative = 1;
 	}
-	while (power > 0)
-	{
-		result = result * nb;
-		power--;
-	}
-	return (result);
+	return (nb_dbl);
 }
