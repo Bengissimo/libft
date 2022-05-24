@@ -6,11 +6,11 @@
 /*   By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 11:00:43 by bkandemi          #+#    #+#             */
-/*   Updated: 2021/12/21 14:42:15 by bkandemi         ###   ########.fr       */
+/*   Updated: 2022/05/24 17:41:20 by bkandemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "libft.h"
 
 static int	seek_more_newline(char **remaining, char **line)
 {
