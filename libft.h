@@ -6,7 +6,7 @@
 /*   By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 11:59:40 by bkandemi          #+#    #+#             */
-/*   Updated: 2022/03/28 10:09:25 by bkandemi         ###   ########.fr       */
+/*   Updated: 2022/05/24 14:29:42 by bkandemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@
 
 # define TRUE 1
 # define FALSE 0
+# define BUFF_SIZE	8
+# define FD_MAX		4096
 
 typedef struct s_list
 {
@@ -91,5 +93,6 @@ char		*ft_itoa_base(uintmax_t nb, int base);
 char		*ft_itoa_base_upper(uintmax_t nb, int base);
 double		ft_power(double nb, int power);
 long double	abs_value(long double nb_dbl, int *negative);
+int			get_next_line(const int fd, char **line);
 
 #endif
