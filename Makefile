@@ -6,7 +6,7 @@
 #    By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/06 12:44:18 by bkandemi          #+#    #+#              #
-#    Updated: 2022/05/26 13:31:09 by bkandemi         ###   ########.fr        #
+#    Updated: 2022/05/28 22:14:55 by bkandemi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,7 +75,8 @@ C_FILES =	ft_atoi.c\
 		ft_free_array.c\
 		ft_power.c\
 		ft_abs_value.c\
-		get_next_line.c
+		get_next_line.c\
+		ft_sqrt.c
 
 O_FILES = $(C_FILES:.c=.o)
 
