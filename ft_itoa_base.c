@@ -43,6 +43,11 @@ char	*ft_itoa_base(uintmax_t nb, int base)
 	str = (char *)malloc(sizeof(char) * (size + 1));
 	if (!str)
 		return (NULL);
+	if (nb < 0)
+	{
+		nb = -nb;
+		str[0] = '-';
+	}
 	if (nb == 0)
 		str[0] = '0';
 	str[size] = '\0';
