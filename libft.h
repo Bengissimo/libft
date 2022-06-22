@@ -6,7 +6,7 @@
 /*   By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 11:59:40 by bkandemi          #+#    #+#             */
-/*   Updated: 2022/05/28 22:21:43 by bkandemi         ###   ########.fr       */
+/*   Updated: 2022/06/22 19:43:09 by bkandemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,6 +95,5 @@ double		ft_power(double nb, int power);
 long double	abs_value(long double nb_dbl, int *negative);
 int			get_next_line(const int fd, char **line);
 float		ft_sqrt(int nb);
-
 
 #endif

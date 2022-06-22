@@ -6,7 +6,7 @@
 /*   By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/28 22:07:59 by bkandemi          #+#    #+#             */
-/*   Updated: 2022/05/28 22:15:06 by bkandemi         ###   ########.fr       */
+/*   Updated: 2022/06/22 19:42:41 by bkandemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ float	ft_sqrt(int nb)
 		approx_1 += 0.1;
 	approx_2 = approx_1;
 	i = 0;
-	while(i < 10)
+	while (i < 10)
 	{	
 		approx_3 = nb;
 		approx_3 /= approx_2;
