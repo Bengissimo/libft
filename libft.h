@@ -6,7 +6,7 @@
 /*   By: bkandemi <bkandemi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 11:59:40 by bkandemi          #+#    #+#             */
-/*   Updated: 2022/06/22 19:43:09 by bkandemi         ###   ########.fr       */
+/*   Updated: 2022/09/11 22:05:47 by bkandemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 # define TRUE 1
 # define FALSE 0
-# define BUFF_SIZE	8
+# define BUFF_SIZE	1024
 # define FD_MAX		4096
 
 typedef struct s_list
